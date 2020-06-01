@@ -35,9 +35,16 @@ class Scraper
 
     socials[:bio] = bio
     socials[:profile_quote] = quote
+<<<<<<< HEAD
   
     social_icons.each do |social|
       social_sm = social.attr("href")
+=======
+    # binding.pry
+    social_icons.each do |social|
+      social_sm = social.attr("href")
+      # binding.pry
+>>>>>>> b7f3583605e428cc9a5913ff18cce7719548525e
       if social_sm.include?("twitter")
         socials[:twitter] = social_sm
       elsif social_sm.include?("linked")
@@ -47,6 +54,10 @@ class Scraper
       else
         socials[:blog] = social_sm
       end
+<<<<<<< HEAD
+=======
+      # binding.pry
+>>>>>>> b7f3583605e428cc9a5913ff18cce7719548525e
     end
       socials
   end
